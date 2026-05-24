@@ -274,13 +274,24 @@ mapping: dict[str, TuyaBLECategorySwitchMapping] = {
                     "bnt7wajf",
                     "rvdceqjh",
                     "5xhbk964",
-                    "HYFB0001",
                 ],  # Fingerbot
                 [
                     TuyaBLEFingerbotSwitchMapping(dp_id=2),
                     TuyaBLEReversePositionsMapping(dp_id=11),
                 ],
             ),
+            "h8kdwywx": [
+                TuyaBLEFingerbotSwitchMapping(dp_id=2),
+                TuyaBLEReversePositionsMapping(dp_id=11),
+                TuyaBLESwitchMapping(
+                    dp_id=17,
+                    description=SwitchEntityDescription(
+                        key="manual_control",
+                        icon="mdi:gesture-tap-box",
+                        entity_category=EntityCategory.CONFIG,
+                    ),
+                ),
+            ],
         },
     ),
     "kg": TuyaBLECategorySwitchMapping(
