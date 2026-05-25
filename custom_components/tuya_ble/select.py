@@ -152,12 +152,24 @@ mapping: dict[str, TuyaBLECategorySelectMapping] = {
                     "bnt7wajf",
                     "rvdceqjh",
                     "5xhbk964",
-                    "h8kdwywx",
                 ],  # Fingerbot
                 [
                     TuyaBLEFingerbotModeMapping(dp_id=8),
                 ],
             ),
+            "h8kdwywx": [
+                TuyaBLESelectMapping(
+                    dp_id=8,
+                    description=SelectEntityDescription(
+                        key="fingerbot_mode",
+                        entity_category=EntityCategory.CONFIG,
+                        options=[
+                            FINGERBOT_MODE_PUSH,
+                            FINGERBOT_MODE_SWITCH,
+                        ],
+                    ),
+                ),
+            ],
         },
     ),
     "kg": TuyaBLECategorySelectMapping(
