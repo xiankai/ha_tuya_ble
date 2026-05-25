@@ -400,7 +400,6 @@ devices_database: dict[str, TuyaBLECategoryInfo] = {
                     "bnt7wajf",
                     "rvdceqjh",
                     "5xhbk964",
-                    "h8kdwywx",
                 ],  # device product_ids
                 TuyaBLEProductInfo(
                     name="Fingerbot",
@@ -413,6 +412,18 @@ devices_database: dict[str, TuyaBLECategoryInfo] = {
                         reverse_positions=11,
                         program=121,
                     ),
+                ),
+            ),
+            "h8kdwywx": TuyaBLEProductInfo(
+                name="Fingerbot",
+                fingerbot=TuyaBLEFingerbotInfo(
+                    switch=2,
+                    mode=8,
+                    up_position=15,
+                    down_position=9,
+                    hold_time=10,
+                    reverse_positions=11,
+                    manual_control=17,
                 ),
             ),
         },
